@@ -1,16 +1,43 @@
-# uas
+# Qhof
+<div align="center">
+  <h1><img src="cat.gif" width="50px" height="50px">Hello Guys!, I'm <a href='https://www.instagram.com/qhof.zn/'>Fauzhan Qhof Pratama</a><img src="cat.gif" width="50px" height="50px"><br/>~ Ui/Ux Designer & Poster Design ~</h1>
+  <h3>🏠 Kab.Bekasi - Jawa Barat, Indonesia</h3>
+</div>
 
-A new Flutter project.
+<br/>
+<br/>
 
-## Getting Started
+<div align = "center">
+  <img src="5YPk.gif" width = 120>
+</div>
 
-This project is a starting point for a Flutter application.
+<br/>
+<br/>
 
-A few resources to get you started if this is your first Flutter project:
+<h1></h1>
+<h1>My Tool | <img src="ya1.gif" width=50></h1>
+<p>
+  <img src="figma.svg" width="40"><img src="canva.svg" width="40"><img src="ae.svg" width="40"><img src="ps.svg" width="40"><img src="axd.svg" width="40">
+</p>
+<h1></h1>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<h1>Contact Me | <img src="gantung.gif" width=50></h1>
+<p>
+  <a href="https://linktr.ee/qhofzn"><img src="link.svg" width="40px"><br/>Link Tree</a>
+</p>
+<h1></h1>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<br/>
+<br/>
+
+<div align="center"> 
+  Visitor count<br>
+  <img src="https://profile-counter.glitch.me/ZanZan17/count.svg" />
+</div>
+<a href=#><img src="contribution.svg"></a>
+<br/>
+<br/>
+
+<div align = "center">
+  <img src = "https://github-readme-streak-stats.herokuapp.com?user=ZanZan17&theme=dark&hide_border=true" width = 400>
+</div>
