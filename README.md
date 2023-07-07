@@ -8,36 +8,8 @@
 <br/>
 
 <div align = "center">
-  <img src="output" width = 120>
+  <img src="output.png" width = 120>
 </div>
 
 <br/>
 <br/>
-
-<h1></h1>
-<h1>My Tool | <img src="ya1.gif" width=50></h1>
-<p>
-  <img src="figma.svg" width="40"><img src="canva.svg" width="40"><img src="ae.svg" width="40"><img src="ps.svg" width="40"><img src="axd.svg" width="40">
-</p>
-<h1></h1>
-
-<h1>Contact Me | <img src="gantung.gif" width=50></h1>
-<p>
-  <a href="https://linktr.ee/qhofzn"><img src="link.svg" width="40px"><br/>Link Tree</a>
-</p>
-<h1></h1>
-
-<br/>
-<br/>
-
-<div align="center"> 
-  Visitor count<br>
-  <img src="https://profile-counter.glitch.me/ZanZan17/count.svg" />
-</div>
-<a href=#><img src="contribution.svg"></a>
-<br/>
-<br/>
-
-<div align = "center">
-  <img src = "https://github-readme-streak-stats.herokuapp.com?user=ZanZan17&theme=dark&hide_border=true" width = 400>
-</div>
