@@ -8,7 +8,7 @@
 <br/>
 
 <div align = "center">
-  <img src="output.png" width = 1000px >
+  <img src="output.png" width = 500px >
 </div>
 
 <br/>
