@@ -8,7 +8,7 @@ void main() {
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key});
 
   @override
   _MyAppState createState() => _MyAppState();
@@ -16,9 +16,8 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   List<Quotes> list = [];
-  // This widget is the root of your application.
 
-  Future fetchData() async {
+  Future<List<Quotes>> fetchData() async {
     var url = Uri.parse('https://katanime.vercel.app/api/getrandom');
     var response = await http.get(url);
 
@@ -28,12 +27,15 @@ class _MyAppState extends State<MyApp> {
       return quotes;
     } else {
       print('Request failed with status: ${response.statusCode}.');
+      return [];
     }
   }
 
   getData() async {
-    list = await fetchData();
-    setState(() {});
+    List<Quotes> quotes = await fetchData();
+    setState(() {
+      list = quotes;
+    });
   }
 
   @override
@@ -41,9 +43,8 @@ class _MyAppState extends State<MyApp> {
     super.initState();
     getData();
   }
-  
-  
- @override
+
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
@@ -60,25 +61,46 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Kata Kata'),
           backgroundColor: Color.fromARGB(221, 7, 12, 98),
         ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const SizedBox(height: 10),
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: Color.fromARGB(255, 16, 15, 74).withOpacity(0.2),
-                ),
-                padding: const EdgeInsets.all(10),
-                child: Text(
-                  list.isNotEmpty ? list[0].indo : "",
-                  style: Theme.of(context).textTheme.headlineMedium,
-                  textAlign: TextAlign.center,
+        body: Stack(
+          children: [
+            Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/background_image.jpg'),
+                  fit: BoxFit.cover,
                 ),
               ),
-            ],
-          ),
+            ),
+            Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const SizedBox(height: 10),
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color.fromARGB(255, 16, 15, 74).withOpacity(0.2),
+                    ),
+                    padding: const EdgeInsets.all(10),
+                    child: Text(
+                      list.isNotEmpty ? list[0].indo : "",
+                      style: Theme.of(context).textTheme.headline4!.copyWith(
+                            color: Colors.white,
+                            shadows: [
+                              Shadow(
+                                color: Colors.black.withOpacity(0.4),
+                                offset: Offset(2, 2),
+                                blurRadius: 2,
+                              ),
+                            ],
+                          ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
@@ -89,6 +111,5 @@ class _MyAppState extends State<MyApp> {
         ),
       ),
     );
-
   }
 }
